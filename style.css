@@ -1,0 +1,26 @@
+/* Centrar el modal */
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    gap: 1px; /* Espaciado entre elementos */
+}
+
+dialog span{
+    font-size: 16px;
+    margin-bottom: 16px;
+
+}
+dialog ul :nth-child(odd){
+    color:  rgba(5, 49, 3, 0.5);
+    font-weight: bold;
+    
+}
