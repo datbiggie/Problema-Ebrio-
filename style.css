@@ -29,9 +29,19 @@ dialog ul :nth-child(even){
     font-weight: bold;
     
 }
-.pruebas{
-    background-color: teal;
+
+#pruebas {
+  border: none;
+  /* Elimina el borde */
+  outline: none;
+  /* Elimina el borde al hacer clic */
 }
+
+ a img {
+   height: 65px !important;
+   /* Ajusta la altura */
+   margin-top: 10px;
+ }
 
 html, body {
     height: 100%;
