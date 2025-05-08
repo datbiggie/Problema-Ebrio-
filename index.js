@@ -164,22 +164,18 @@ function prueba(CantPruebas){
     console.log("Probabilidad: "  + ((goal/CantPruebas)*100).toFixed(2) + "%");
 
     let html = document.getElementById('results');
-    let resultados = `
-    <div>
-            <h3>Resultados de la simulacion</h3>
-            <hr>
+    let resultados = `      
 
-            <p><strong>Número de intentos: </strong></p>
-            <span id="intentofallado" class="pb-5">` + CantPruebas + `</span>
-            <br><br>
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Resultado de la Simulación</h5>
+   
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Número de intentos:   `+ CantPruebas + ` </p>
+    <br>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Intentos con exito:   `+ goal +` </p>
+    <br>   
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Probabilidad:   `+ ((goal/CantPruebas)*100).toFixed(2) + `% </p>
+</div>
 
-            <p><strong>Intentos con exito: </strong></p>
-            <span id="intentoexito">`+ goal +`</span>
-            <br><br>
-
-            <p><strong>Probabilidad:</strong></p>
-            <span id="probabilidad">`+ ((goal/CantPruebas)*100).toFixed(2) + `%</span>
-          </div>
     `;
  
     html.innerHTML = resultados;

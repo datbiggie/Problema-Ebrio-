@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assests/icons/drunk.png" />
-    <title>Problematica del Ebrio</title>
+    <title>Problemática del Ebrio</title>
 
     <!-- Bootstrap -->
     <link
@@ -65,19 +65,10 @@
             <div class="flex items-center gap-4 ">
               <div class="sm:flex sm:gap-4">
                 <button id="show"
-                  class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition rounded hover:bg-teal-700">Integrantes</button>
+                  class="block bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition rounded hover:bg-teal-700">Integrantes</button>
               </div>
-      
-                
 
-
-              <button class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
-                <span class="sr-only">Toggle menu</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
+                          
             </div>
           </div>
         </div>
@@ -86,7 +77,7 @@
 
     <section id="body">
       <div class="d-flex flex-column align-items-center justify-content-center">
-        <h1 class="my-4 mx-auto">Problematica del Ebrio</h1>
+        <h1 class="my-1 mx-auto font-mono mb-5">Problemática del Ebrio</h1>
 
         <div class="input-group mb-1 w-50">
           <input
@@ -102,14 +93,15 @@
             min="1"
             max="1000" />
           <button
-            class="input-group-text btn btn-primary"
+            class="input-group-text bg-teal-600 btn btn-primary "
             id="#pruebas"
-            onclick="verificacion()">
+            onclick="verificacion()"
+            style="background-color: #0d9488;">
             Iniciar
           </button>
         </div>
         <p class="fs-6 fw-light text-body-secondary">
-          Minimo: 1 ~ Maximo: 9999
+          Rango: 1 ~ 9999
         </p>
       </div>
     </section>
@@ -136,11 +128,8 @@
       </div>
     </section>
 
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <div class="text-center p-4" style="background-color: #f8f9fa">
-        Simulación de Sistemas.
-        <a class="text-reset fw-bold" href="#">Problematica del Ebrio</a>
-      </div>
+    
+    
     <script>
       function isNumberKey(evt) {
         var charCode = evt.which ? evt.which : evt.keyCode;
@@ -187,7 +176,7 @@
       <div id="modal" class="">
         <dialog id="dialog" class="bg- rounded-lg p-5">
           <span class=" font-bold ">Realizado por:</span>
-          <ul id="" class="">
+          <ul id="" class="p-3">
             <li>
               Rafael Chirinos
             </li>
@@ -198,7 +187,7 @@
               Luis Urdaneta
             </li>
           </ul>
-          <button id="hide" class=" rounded-md bg-teal-600 px-6 py-2.5 text-medium font-medium text-white transition rounded hover:bg-teal-700">Cerrar modal</button>
+          <button id="hide" class=" bg-teal-600 px-14 py-2 text-medium font-medium text-white transition rounded hover:bg-teal-700">Cerrar</button>
         </dialog>
       </div>
       
@@ -212,6 +201,12 @@
           window.dialog.close()
         })
       </script>
-
+      <footer class="bg-teal-600 text-white py-2">
+        <div class="container mx-auto text-center">
+          <div class="mb-4">
+            <span class=" font-sans">Problemática del Ebrio - 2025</span>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
